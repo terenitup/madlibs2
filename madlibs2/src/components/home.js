@@ -14,7 +14,7 @@ export default class Home extends Component {
             <div className="madlib-subheading">
               Fill out the fields below and click the generate button<br/>to see the Mad Lib story.
             </div>
-            <Madlib_form />
+            {/* <Madlib_form /> */}
             {Header()}
             <Card />
         </div>

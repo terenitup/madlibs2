@@ -4,19 +4,19 @@ $mainGray: #CFCFCF;
 $darkGray: #444444;
 $font-primary: 'Montserrat', sans-serif;
 
-.backgroundSkew {
-    width: 100vw;
-    height: 700px;
-    background-color: $darkGray;
-    transform: skewY(-10deg);
-    margin-top: -17rem;
-    padding-top: 17rem;
-    border-bottom: 1rem solid $bottegaGreen;
-}
+// .backgroundSkew {
+//     width: 100vw;
+//     height: 700px;
+//     background-color: $darkGray;
+//     transform: skewY(-10deg);
+//     margin-top: -17rem;
+//     padding-top: 17rem;
+//     border-bottom: 1rem solid $bottegaGreen;
+// }
 
-.backgroundSkew > * {
-    transform: skewY(10deg);
-}
+// .backgroundSkew > * {
+//     transform: skewY(10deg);
+// }
 
 // .madlib-heading {
 //     // text-align: center;
@@ -34,15 +34,41 @@ $font-primary: 'Montserrat', sans-serif;
 // }
 
 .home {
+    position: relative;
+
     background-color: rgba(207, 207, 207, 0.06);
     display: grid;
     justify-items: center;
     // align-items: center;
-    grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e]
+    grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
 }
 
 .header {
     align-self: center;
+    &__skew {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width:100vw;
+        background-color: #444444;
+    }
+    &__border {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
+
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width:100vw;
+        background-color: $bottegaGreen;
+    }
 }
 
 .card {

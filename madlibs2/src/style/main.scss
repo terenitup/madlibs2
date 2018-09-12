@@ -113,15 +113,40 @@ $font-primary: 'Montserrat', sans-serif;
 .input {
     display: grid;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+
+    font-family: 'Montserrat';
+    text-align: center;
     
     &__title {
         grid-column: input-s/input-e;
+
+        border-top: 1px solid #b3b3b3;
+        color: #b3b3b3;
+        font-size: 12px;
+        font-weight: 300;
+
     }
     input {
         grid-column: input-s/input-e;
+        border: none;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+        // height: 40px;
+        // width: 190px;
+
     }
     &__number {
         grid-column: number-s/number-e;
+
+        background-color: $bottegaGreen;
+        color: white;
+        font-size: 20px;
+        
+        line-height: 24px;
+        padding-top: 1px;
+
+        border-radius: 50%;
     }
 }
 

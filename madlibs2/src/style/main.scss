@@ -45,6 +45,14 @@ $font-primary: 'Montserrat', sans-serif;
 //     font-size: 15px;
 // }
 
+.gray {
+    background: #b3b3b3;
+}
+
+.green {
+    background: $bottegaGreen
+}
+
 .home {
     position: relative;
 
@@ -206,7 +214,7 @@ $font-primary: 'Montserrat', sans-serif;
     &__number {
         grid-column: number-s/number-e;
 
-        background-color: $bottegaGreen;
+        // background-color: $bottegaGreen;
         color: white;
         font-size: 20px;
         

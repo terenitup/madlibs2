@@ -6,10 +6,6 @@ class Content extends Component {
         super()
         this.count = 1;
     }
-    
-    componentDidUpdate() {
-        this.count = 1;
-    }
 
     componentWillReceiveProps() {
         this.count = 1;
